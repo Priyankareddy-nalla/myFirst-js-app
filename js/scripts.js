@@ -23,3 +23,5 @@ for (let i = 0; i < pokemonList.length; i++) {
 
     }
 }
+// Javascript body color 
+document.body.style.color = "red";
