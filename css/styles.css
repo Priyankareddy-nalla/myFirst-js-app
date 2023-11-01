@@ -1,1 +1,21 @@
+body {
+    font-family: Agbalumo;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration-style: inherit;
+}
 
+h1 {
+    -webkit-text-fill-color: blue;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.page-header {
+    display: flex;
+    width: auto;
+    padding: 50px;
+}
