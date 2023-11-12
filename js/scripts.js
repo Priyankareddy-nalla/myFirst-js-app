@@ -29,22 +29,37 @@ let pokemonRepository = (function () {
         listpokemon.appendChild(button);
         //pokemon list append to listpokemon
         pokemonList1.appendChild(listpokemon);
+
+        //adding Eventlistner to button
+        button.addEventListener('click', function () {
+            showDetails(pokemon);
+        });
+
     }
 
-        return {
-            getAll: getAll,
-            add: add,
-            addListItem: addListItem
-        }
+    //showDeatails function
+    function showDetails(pokemon) {
+        console.log("Name: " + pokemon.name);
+        console.log("Height: " + pokemon.height);
+        console.log("Types: " + pokemon.types);
+    }
 
 
-    }) ()
+    return {
+        getAll: getAll,
+        add: add,
+        showDetails: showDetails,
+        addListItem: addListItem
+    }
 
-    //adding object in pokemonRepository to pokemonList
-    pokemonRepository.add({ name: 'Schillok', height: 8, types: ['water', 'grass'] });
 
-    pokemonRepository.getAll().forEach(function (pokemon) {
-        pokemonRepository.addListItem(pokemon);
+})()
+
+//adding object in pokemonRepository to pokemonList
+pokemonRepository.add({ name: 'Schillok', height: 8, types: ['water', 'grass'] });
+
+pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.addListItem(pokemon);
 
 
-    });
+});
