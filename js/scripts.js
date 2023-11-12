@@ -14,51 +14,37 @@ let pokemonRepository = (function () {
         pokemonList.push(item);
     }
 
-    return {
-        getAll: getAll,
-        add: add
+    //pokemon list display with button  
+    function addListItem(pokemon) {
+        let pokemonList1 = document.querySelector('.pokemon-list');
+        //creating lsit items to pokemonlist
+        let listpokemon = document.createElement('li');
+        //creating button for pokemonList
+        let button = document.createElement('button');
+        //showing pokemonList 
+        button.innerText = pokemon.name;
+        //adding styles to button
+        button.classList.add('button-class');
+        //adding data to button
+        listpokemon.appendChild(button);
+        //pokemon list append to listpokemon
+        pokemonList1.appendChild(listpokemon);
     }
 
+        return {
+            getAll: getAll,
+            add: add,
+            addListItem: addListItem
+        }
 
-})()
 
-pokemonRepository.getAll().forEach(function (pokemon) {
-    //here it checks pokemon height <6 and >4 then answer is 5
-    if (pokemon.height < 6 && pokemon.height > 4) {
-        document.write('<div>' + pokemon.name + '(height: ' + pokemon.height + ')' + '</div>');
-        document.write("<br>");
-        // it checks equal to 7 
-    } else if (pokemon.height === 7) {
-        document.write('<div>' + pokemon.name + '(height: ' + pokemon.height + ')'
-            + "- Wow, that\'s big!" + '</div>');
-        document.write("<br>");
-        //remaining pokemon list displayed
-    } else {
-        document.write('<div>' + pokemon.name + '(height: ' + pokemon.height + ')' + '</div>');
-        document.write("<br>");
+    }) ()
 
-    }
-});
-//adding object in pokemonRepository to pokemonList
-pokemonRepository.add({ name: 'Schillok', height: 8, types: ['water', 'grass'] });
+    //adding object in pokemonRepository to pokemonList
+    pokemonRepository.add({ name: 'Schillok', height: 8, types: ['water', 'grass'] });
 
-pokemonRepository.getAll().forEach(function (pokemon) {
+    pokemonRepository.getAll().forEach(function (pokemon) {
+        pokemonRepository.addListItem(pokemon);
 
-    //here it checks pokemon height <6 and >4 then answer is 5
-    if (pokemon.height < 6 && pokemon.height > 4) {
-        document.write('<p>' + "list after adding object" + '<p>');
 
-        document.write(pokemon.name + '(height: ' + pokemon.height + ')');
-        document.write("<br>");
-        // it checks equal to 7 
-    } else if (pokemon.height === 7) {
-        document.write(pokemon.name + '(height: ' + pokemon.height + ')'
-            + "- Wow, that\'s big!");
-        document.write("<br>");
-        //remaining pokemon list displayed
-    } else {
-        document.write(pokemon.name + '(height: ' + pokemon.height + ')');
-        document.write("<br>");
-
-    }
-});
+    });
