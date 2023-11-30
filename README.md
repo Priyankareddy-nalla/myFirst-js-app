@@ -18,7 +18,7 @@ When I click on on the Pokemon button ,I can see the details of pokemon. And I c
 
 ## Link of the Appliction
 
-
+https://priyankareddy-nalla.github.io/myFirst-js-app/
 
 ## Visualization of the application
 ![Pokemon-app](https://github.com/Priyankareddy-nalla/myFirst-js-app/assets/148527465/a7b5beb8-d961-4b20-9892-64d3ade8ee9b)
