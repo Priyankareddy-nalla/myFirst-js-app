@@ -24,10 +24,11 @@
         <!-- Logo Image -->
         <img src="img/applogo.png" width="45" alt="" class="d-inline-block align-middle mr-2">
         <div>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="mySearch" type="search" placeholder="Search" aria-label="Search">
+          </form>
+
         </div>
       </div>
     </nav>
@@ -37,20 +38,23 @@
   <br><br>
 
   <!-- displaying pokemonlist using bootstarp modal -->
-  <h1>Pókedex</h1>
-  <ul class="pokemon-list list-group  list-group-horizontal   row "></ul>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"></h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
+  <div class="container">
+
+    <h1>Pókedex</h1>
+    <ul class="pokemon-list list-unstyled list-group  list-group-horizontal   row  "></ul>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
         </div>
       </div>
     </div>

@@ -33,7 +33,8 @@ let pokemonRepository = (function () {
         button.innerText = pokemon.name;
         //adding Bootstrap framework for pokemonList
         listItem.classList.add("list-group-item");
-        listItem.classList.add('col-3')
+        listItem.classList.add('col-12')
+        listItem.classList.add('col-md-4')
 
         button.setAttribute("data-toggle", "modal");
         button.setAttribute("data-target", "#exampleModal");
@@ -107,5 +108,21 @@ let pokemonRepository = (function () {
 pokemonRepository.loadList().then(function () {
     pokemonRepository.getAll().forEach(function (pokemon) {
         pokemonRepository.addListItem(pokemon);
+    });
+});
+
+//search function
+document.getElementById('mySearch').addEventListener('input', function (event) {
+    const searchTerm = event.target.value.toLowerCase();
+    const listItems = document.querySelectorAll('.pokemon-list li');
+
+    listItems.forEach(function (item) {
+        const itemText = item.textContent.toLowerCase();
+
+        if (itemText.includes(searchTerm)) {
+            item.style.display = 'list-item';
+        } else {
+            item.style.display = 'none';
+        }
     });
 });

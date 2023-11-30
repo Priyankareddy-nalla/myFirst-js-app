@@ -1,9 +1,12 @@
+/* styels for pokmonlist */
 .list-group-item {
   border-top: 1px solid #fff;
   border-left-color: #fff;
   border-right-color: #fff;
   border-bottom: #fff;
 }
+
+
 
 body {
   /* font-family: Agbalumo; */
@@ -18,43 +21,25 @@ h1 {
   -webkit-text-fill-color: rgb(13, 200, 221);
   font-size: 50px;
   font-weight: 700;
+
 }
 
 .navbar {
   background-color: rgb(215, 92, 243);
+
 }
 
 a {
   color: #fff;
 }
 
+
 /* styles for button   */
 .btn,
 btn-primary {
   background-color: rgb(127, 127, 236);
+
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 1em;
-}
-
-/* media Query */
-@media all and (max-width: 500px) {
-  .button-class {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .list-group-item {
-    grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
 }
