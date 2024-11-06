@@ -9,7 +9,6 @@
 
 
 body {
-  /* font-family: Agbalumo; */
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
@@ -38,7 +37,6 @@ a {
 .btn,
 btn-primary {
   background-color: rgb(127, 127, 236);
-
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 1em;

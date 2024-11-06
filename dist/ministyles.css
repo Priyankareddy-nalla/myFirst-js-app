@@ -1,1 +1,62 @@
-.list-group-item{border-top:1px solid #fff;border-left-color:#fff;border-right-color:#fff;border-bottom:#fff}body{font-weight:400;font-size:20px;line-height:1.6;text-align:center;text-decoration-style:inherit}h1{-webkit-text-fill-color:rgb(13,200,221);font-size:50px;font-weight:700}.navbar{background-color:#d75cf3}a{color:#fff}.btn,btn-primary{background-color:#7f7fec;padding-top:30px;padding-bottom:30px;font-size:1em}
+.list-group-item {
+    border-top: 1px solid #5b595c;
+    border-left-color: #5b595c;
+    border-right-color: #5b595c;
+    border-bottom: #5b595c;
+    background-color: #5b595c;
+}
+
+body {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    text-decoration-style: inherit;
+    background-color: #5b595c;
+}
+
+h1 {
+    -webkit-text-fill-color: rgb(30, 235, 34);
+    font-size: 50px;
+    font-weight: 700
+}
+
+.navbar {
+    background-color: #5b595c;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.btn,
+btn-primary {
+    background-color: #5b595c;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1em;
+    box-shadow: 0px 4px 8px #ffba08;
+    border: 3px solid #ffba08;
+    border-radius: 8px;
+    transition: transform 0.2s ease, color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+h2 {
+    font-family: 'Pacifico', cursive;   
+    font-size: 50px;
+    color: #ffba08;
+    transition: transform 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.2);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    border-color: rgb(196, 241, 73);
+    background-color: rgb(196, 241, 73);
+    transform: scale(1.1);
+}
