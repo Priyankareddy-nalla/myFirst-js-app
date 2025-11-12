@@ -93,7 +93,8 @@ let pokemonRepository = (function () {
     function showDetails(pokemon) {
         loadDetails(pokemon).then(function () {
             showModal(pokemon);
-        });
+    
+    });
     }
 
     return {
@@ -123,6 +124,7 @@ document.getElementById('mySearch').addEventListener('input', function (event) {
             item.style.display = 'list-item';
         } else {
             item.style.display = 'none';
+
         }
     });
 });
